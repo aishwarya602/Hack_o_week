@@ -18,3 +18,14 @@ Output:
 Semester: 5
 Course: CS101
 Date: 12 March
+
+## workflow diagram
+```mermaid
+flowchart TD
+    A[User Query] --> B[Preprocessing]
+    B --> C[Tokenization]
+    C --> D[Apply Rules / Regex / Keyword Matching]
+    D --> E[Extract Entities]
+    E --> F[Structure Data (JSON Format)]
+    F --> G[Use in Database / Response System]
+    G --> H[Output to User]
