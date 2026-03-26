@@ -17,3 +17,15 @@ Bot: Semester 5 exams start on March 20.
 - Basic intent detection
 - Regex-based entity extraction
 - Conversation state management
+
+## workflow diagram 
+```mermaid
+flowchart TD
+    A[User Query] --> B[Preprocessing]
+    B --> C[Check Conversation History]
+    C --> D[Combine Context + Query]
+    D --> E[Intent Detection]
+    E --> F[Retrieve Answer]
+    F --> G[Generate Response]
+    G --> H[Update Memory]
+    H --> I[Output to User]
